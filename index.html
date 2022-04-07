@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Keyboard</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="text__inner">
+      <input type="text" id="text" placeholder="Your Text" disabled>
+    </div>
+
+    <div class="cover">
+      <div class="keyboard">
+
+        <!-- F-Keys -->
+        <div class="keyboard__f">
+          <div class="esc" id="esc"><p class="esc__Btn">esc</p></div>
+          <div class="keyboard__fKey keyClick" id="keyF1">F1</div>
+          <div class="keyboard__fKey keyClick" id="keyF2">F2</div>
+          <div class="keyboard__fKey keyClick" id="keyF3">F3</div>
+          <div class="keyboard__fKey keyClick" id="keyF4">F4</div>
+          <div class="keyboard__fKey keyClick" id="keyF5">F5</div>
+          <div class="keyboard__fKey keyClick" id="keyF6">F6</div>
+          <div class="keyboard__fKey keyClick" id="keyF7">F7</div>
+          <div class="keyboard__fKey keyClick" id="keyF8">F8</div>
+          <div class="keyboard__fKey keyClick" id="keyF9">F9</div>
+          <div class="keyboard__fKey keyClick" id="keyF10">F10</div>
+          <div class="keyboard__fKey keyClick" id="keyF11">F11</div>
+          <div class="keyboard__fKey keyClick" id="keyF12">F12</div>
+          <div class="keyboard__touch keyClick"></div>
+        </div>
+  
+        <!-- Numbers Keys -->
+        <div class="keyboard__numbers">
+          <div class="keyboard__key keyClick" id="backquote">\</div>
+          <div class="keyboard__key keyClick" id="key1">1</div>
+          <div class="keyboard__key keyClick" id="key2">2</div>
+          <div class="keyboard__key keyClick" id="key3">3</div>
+          <div class="keyboard__key keyClick" id="key4">4</div>
+          <div class="keyboard__key keyClick" id="key5">5</div>
+          <div class="keyboard__key keyClick" id="key6">6</div>
+          <div class="keyboard__key keyClick" id="key7">7</div>
+          <div class="keyboard__key keyClick" id="key8">8</div>
+          <div class="keyboard__key keyClick" id="key9">9</div>
+          <div class="keyboard__key keyClick" id="key0">0</div>
+          <div class="keyboard__key keyClick" id="minus">-</div>
+          <div class="keyboard__key keyClick" id="equal">=</div>
+          <div class="backspace keyClick" id="backspace">⌫</div>
+        </div>
+  
+        <!-- Letters Kyes -->
+        <div class="keyboard__letters">
+  
+          <!-- From "TAB" to "]" -->
+          <div class="keyboard__letters-one">
+            <div class="tab keyClick" id="tab">⇥</div>
+            <div class="keyboard__letter keyClick" id="keyQ">й</div>
+            <div class="keyboard__letter keyClick" id="keyW">ц</div>
+            <div class="keyboard__letter keyClick" id="keyE">у</div>
+            <div class="keyboard__letter keyClick" id="keyR">к</div>
+            <div class="keyboard__letter keyClick" id="keyT">е</div>
+            <div class="keyboard__letter keyClick" id="keyY">н</div>
+            <div class="keyboard__letter keyClick" id="keyU">г</div>
+            <div class="keyboard__letter keyClick" id="keyI">ш</div>
+            <div class="keyboard__letter keyClick" id="keyO">щ</div>
+            <div class="keyboard__letter keyClick" id="keyP">з</div>
+            <div class="keyboard__letter keyClick" id="bracketL">х</div>
+            <div class="keyboard__letter keyClick" id="bracketR">ї</div>
+            <div class="enterOne keyClick" id="enterOne">↩</div>
+          </div>
+  
+          <!-- From "CAPS" to "\" -->
+          <div class="keyboard__letters-two">
+            <div class="caps keyClick" id="caps">
+              <div class="capsTop">
+                <div class="point" id="point"></div>
+              </div>
+              <div class="capsBottom">⇪</div>
+            </div>
+            <div class="keyboard__letter keyClick" id="keyA">ф</div>
+            <div class="keyboard__letter keyClick" id="keyS">і</div>
+            <div class="keyboard__letter keyClick" id="keyD">в</div>
+            <div class="keyboard__letter keyClick" id="keyF">а</div>
+            <div class="keyboard__letter keyClick" id="keyG">п</div>
+            <div class="keyboard__letter keyClick" id="keyH">р</div>
+            <div class="keyboard__letter keyClick" id="keyJ">о</div>
+            <div class="keyboard__letter keyClick" id="keyK">л</div>
+            <div class="keyboard__letter keyClick" id="keyL">д</div>
+            <div class="keyboard__letter keyClick" id="semicolon">ж</div>
+            <div class="keyboard__letter keyClick" id="quote">є</div>
+            <div class="keyboard__letter keyClick" id="backslash">ʼ</div>
+            <div class="enterTwo keyClick" id="enterTwo"></div>
+          </div>
+  
+          <!-- From "LSHIFT" to "RSHIFT" -->
+          <div class="keyboard__letters-three">
+            <div class="leftShift keyClick" id="leftShift">⇧</div>
+            <div class="keyboard__letter keyClick" id="keyZ">я</div>
+            <div class="keyboard__letter keyClick" id="keyX">ч</div>
+            <div class="keyboard__letter keyClick" id="keyC">с</div>
+            <div class="keyboard__letter keyClick" id="keyV">м</div>
+            <div class="keyboard__letter keyClick" id="keyB">и</div>
+            <div class="keyboard__letter keyClick" id="keyN">т</div>
+            <div class="keyboard__letter keyClick" id="keyM">ь</div>
+            <div class="keyboard__letter keyClick" id="comma">б</div>
+            <div class="keyboard__letter keyClick" id="period">ю</div>
+            <div class="keyboard__letter keyClick" id="slash">.</div>
+            <div class="rightShift keyClick" id="rightShift">⇧</div>
+          </div>
+  
+          <!-- From "FN" to "ARROW"  -->
+          <div class="keyboard__letters-four">
+            <div class="fn keyClick" id="fc">fn</div>
+            <div class="control keyClick" id="control">
+              <div class="lTop">⌃</div>
+              <div class="lBottom">control</div>
+            </div>
+            <div class="option keyClick" id="leftOption">
+              <div class="lTop">⌥</div>
+              <div class="lBottom">option</div>
+            </div>
+            <div class="command keyClick" id="leftCommand">
+              <div class="lTop">⌘</div>
+              <div class="lBottom">command</div>
+            </div>
+            <div class="space keyClick" id="space"></div>
+            <div class="command keyClick" id="rightCommand">
+              <div class="rTop">⌘</div>
+              <div class="rBottom">command</div>
+            </div>
+            <div class="option keyClick" id="rightOption">
+              <div class="rTop">⌥</div>
+              <div class="rBottom">option</div>
+            </div>
+            <div class="arrows">
+              <div class="leftArrow keyClick" id="leftArrow">←</div>
+              <div class="upDown">
+                <div class="upArrow keyClick" id="upArrow">↑</div>
+                <div class="downArrow keyClick" id="downArrow">↓</div>
+              </div>
+              <div class="rightArrow keyClick" id="rightArrow">→</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
