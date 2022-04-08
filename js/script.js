@@ -600,6 +600,20 @@ function keyDown(e) {
     for (let k = 0; k < keyLetter.length; k++) {
       keyLetter[k].style.textTransform = 'uppercase';
     }
+
+    document.getElementById('key0').textContent = ')';
+    document.getElementById('key1').textContent = '!';
+    document.getElementById('key2').textContent = '"';
+    document.getElementById('key3').textContent = '№';
+    document.getElementById('key4').textContent = ';';
+    document.getElementById('key5').textContent = '%';
+    document.getElementById('key6').textContent = ':';
+    document.getElementById('key7').textContent = '?';
+    document.getElementById('key8').textContent = '*';
+    document.getElementById('key9').textContent = '(';
+    document.getElementById('backquote').textContent = '/';
+    document.getElementById('minus').textContent = '_';
+    document.getElementById('equal').textContent = '+';
   } else if (e.keyCode === 17) {
     document.getElementById('control').style.transform = 'scale(0.9, 0.9)';
   } else if (e.keyCode === 17) {
@@ -798,6 +812,20 @@ function keyUp(e) {
     for (let k = 0; k < keyLetter.length; k++) {
       keyLetter[k].style.textTransform = 'lowercase';
     }
+
+    document.getElementById('key0').textContent = '0';
+    document.getElementById('key1').textContent = '1';
+    document.getElementById('key2').textContent = '2';
+    document.getElementById('key3').textContent = '3';
+    document.getElementById('key4').textContent = '4';
+    document.getElementById('key5').textContent = '5';
+    document.getElementById('key6').textContent = '6';
+    document.getElementById('key7').textContent = '7';
+    document.getElementById('key8').textContent = '8';
+    document.getElementById('key9').textContent = '9';
+    document.getElementById('backquote').textContent = '\\';
+    document.getElementById('minus').textContent = '-';
+    document.getElementById('equal').textContent = '=';
   } else if (e.keyCode === 17) {
     document.getElementById('control').style.transform = 'scale(1, 1)';
   } else if (e.keyCode === 17) {
